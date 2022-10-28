@@ -1,8 +1,9 @@
-var formulario = document.querySelector("#form")
-
-formulario.onsubmit = function(e) {
-
-  e.prevent();
+//se le quita el signo # al form
+var formulario = document.querySelector("form")
+//cambie la sintaxis de la funcion flecha
+formulario.onsubmit =(e) => {
+//Agregué el default
+  e.preventDefault();
   
   var n = formulario.elements[0]
   var e = formulario.elements[1]
